@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Random QR code for Pokémon Sun & Moon</title>
+		<style>
+		body {
+			background-image: url("./img/back.jpg");
+			background-repeat: no-repeat;
+		}
+		#qrcode {
+			position: absolute;
+			top:50%;
+			left:50%;
+			transform:translate(-50%, -50%);
+		}
+		</style>
+		<script src="./js/qrcode.min.js"></script>
+		<script src="./js/script.js"></script>
+	</head>
+	<body onload="generateQR()">
+		<div id="qrcode"></div>
+	</body>
+</html>
